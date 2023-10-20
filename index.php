@@ -26,7 +26,7 @@
                     <br/><br/>
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Data Pengguna</h4>
+                            <h4 class="card-title">Data Penjualan</h4>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover table-bordered" id="mytable" style="margin-top: 10px">
@@ -60,13 +60,22 @@
                                             <a href="edit.php?id=<?php echo $isi;?>" class="btn btn-success btn-md">
                                             <span class="fa fa-edit"></span></a>
                                             <a onclick="return confirm('Apakah yakin data akan di hapus?')" href="proses/crud.php?aksi=hapus&hapusid=<?php echo $isi;?>" 
-                                            class="btn btn-danger btn-md"><span class="fa fa-trash"></span></a>
-                                        </td>
+                                            class="btn btn-danger btn-md"><span class="fa fa-trash"></span>
+                                            </td>
                                     </tr>
                                 <?php
                                     $no++;
                                     }
                                 ?>
-                                </table>
-                            </body>
-                        </html>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('#mytable').dataTable();
+        </script>
+    </body>
+</html>
