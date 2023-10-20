@@ -18,7 +18,6 @@
             <span style="color:#fff";>Selamat Datang, <?php echo $sesi['NamaPelanggan'];?></span>
 			<div class="float-right">	
 				<a href="index.php" class="btn btn-success btn-md" style="margin-right:1pc;"><span class="fa fa-home"></span> Kembali</a> 
-				<a href="logout.php" class="btn btn-danger btn-md float-right"><span class="fa fa-sign-out"></span> Logout</a>
 			</div>		
 			<br/><br/><br/>
 			<div class="row">
@@ -27,7 +26,7 @@
 					<br/>
 					<div class="card">
 						<div class="card-header">
-						<h4 class="card-title">Tambah Pengguna</h4>
+						<h4 class="card-title">Tambah Pelanggan/h4>
 						</div>
 						<div class="card-body">
 							<form action="proses/crud.php?aksi=tambah" method="POST">
